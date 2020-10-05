@@ -1,0 +1,28 @@
+{
+  "name": "chatter_Boi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "10.21.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "devStart":"nodemon server.js"
+
+  },
+  "keywords": [],
+  "author": "Sahil Mund",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "moment": "^2.29.0",
+    "peer": "^0.5.3",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
