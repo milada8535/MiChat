@@ -26,7 +26,7 @@ app.use('/peerjs',PeerServer);
 
 
 let roomname;
-const botName = 'Admin Bot';
+const botName = 'ربات روان گپ';
 
 // Run when Client Connects
 // ? listening to the event i.e. connection
@@ -49,7 +49,7 @@ io.on('connection',(socket)=>{
      socket.join(user.room);
     
     //  ? emiting a msg to myself only
-    socket.emit('message',formatMessage(botName, 'Welcome to Chat !'))
+    socket.emit('message',formatMessage(botName, 'به وبینار روان گپ خوش آمدید'))
 
     // ? broadcast when a user connects to all the users except me
     socket.broadcast.to(user.room).emit('message',formatMessage(botName,`${user.username} has joined the chat`));
@@ -57,7 +57,7 @@ io.on('connection',(socket)=>{
     socket.on('videocall',({username,room})=>{
       console.log(uuidV4);
       roomname=room;
-      io.to(user.room).emit('message',formatMessage(username,`<a target='_blank' href="/${uuidV4()}">click Here to join videocall </a>`))
+      io.to(user.room).emit('message',formatMessage(username,`<a target='_blank' href="/${uuidV4()}">برای ارتباط تصویری کلیک کنید </a>`))
       console.log(roomname);
     })
 
