@@ -50,9 +50,17 @@ navigator.mediaDevices
     video: true,
     audio: true,
   })
-  .then((stream) => {
-    myVideoStream = stream;
-    addVideoStream(myVideo, stream);
+    .then((stream) => {
+
+        const videoTracks = stream.getVideoTracks();
+        console.log(videoTracks[0].enabled);
+        document.querySelector('video').srcObject = stream;
+    });
+
+ 
+
+    //myVideoStream = stream;
+    //addVideoStream(myVideo, stream);
 
     // Filter event
     photoFilter.addEventListener("change", function (e) {
