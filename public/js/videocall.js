@@ -17,7 +17,7 @@ const ROOM_ID = ID.slice(1,ID.length)
 let width = 300,
   height = 0,
   filter = "none",
-  streaming = true,
+  streaming = false,
   clicked,
   currentFilter,
   myVideoStream;
