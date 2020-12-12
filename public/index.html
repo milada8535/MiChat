@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="index,follow" />
+
+    <link rel="stylesheet" href="css/home-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+          rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav.png">
+    <title>پنل وبینار روان گپ</title>
+</head>
+  <body onload="checkCookie()">
+      <header class="main-head">
+          <nav>
+              <div class="logo">
+                  <img src="logo.png" alt="logo" />
+
+              </div>
+              <div class="nav-links">
+
+              </div>
+          </nav>
+      </header>
+      <section class="hero">
+          <div class="hero-left">
+              <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpGTjgGTQONyb44PpPfFn496x7mqQvq6LWtQ&usqp=CAU -->
+              <div class="hero-left-svg">
+                  <img class="animated__img"
+                       src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/11/8-superstar-video-conferencing-chat-apps-for-business-5de073204c94e.png"
+                       alt="video call svg image" />
+
+                  <div class="hero-left-qoute-area">
+                      <div class="text-one" id="qoute-msg">
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <div class="hero-right">
+
+              <div class="hero-left-text-area">
+                  <div class="text-one">
+                      <h3 style="font-family:'Yekan' ; ">سامانه وبینار روان گپ</h3>
+                  </div>
+                  <div class="hero-left-button-area">
+                      <div class="button-one">
+                          <form>
+                              <button type="submit">
+                                  <div class="button-image">
+                                      <img src="img/video-add-line 1.svg" />
+                                  </div>
+                                  <div class="button-one-text">
+                                      <a href="homeChat.html" style="font-family:'Yekan' ; ">ورود به سامانه</a>
+                                  </div>
+                              </button>
+                          </form>
+                      </div>
+
+                  </div>
+                  <div class="text-two">
+
+                  </div>
+              </div>
+          </div>
+      </section>
+      <script src="js/shareLink.js"></script>
+      <script>
+          //function setCookie(cname, cvalue, exdays) {
+          //    var d = new Date();
+          //    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+          //    var expires = "expires=" + d.toGMTString();
+          //    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+          //}
+
+          //function getCookie(cname) {
+          //    var name = cname + "=";
+          //    var decodedCookie = decodeURIComponent(document.cookie);
+          //    var ca = decodedCookie.split(';');
+          //    for (var i = 0; i < ca.length; i++) {
+          //        var c = ca[i];
+          //        while (c.charAt(0) == ' ') {
+          //            c = c.substring(1);
+          //        }
+          //        if (c.indexOf(name) == 0) {
+          //            return c.substring(name.length, c.length);
+          //        }
+          //    }
+          //    return "";
+          //}
+
+
+
+    function checkCookie() {
+            var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+        })();
+
+       
+         var user = urlParams["CODE"];
+           if (user != "" && user != null && user == '12345678909876543210') {
+                     
+                  }
+                  else {
+                     window.location.href = 'http://ravangap.ir/';
+
+                  }
+
+    }
+          //function checkCookie() {
+          //    var user = getCookie("ID");
+          //    if (user != "") {
+          //        alert("Welcome again " + user);
+          //    } else {
+          //        user = prompt("Please enter your name:", "");
+          //        if (user != "" && user != null) {
+          //            setCookie("ID", user, 30);
+          //        }
+          //        else {
+          //           window.location.href = 'http://ravangap.ir/';
+
+          //        }
+          //    }
+          //}
+      </script>
+  </body>
+</html>
