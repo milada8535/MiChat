@@ -35,7 +35,7 @@ let width = 300,
 const myPeer = new Peer(undefined, {
   path: "/peerjs",
   host: "/",
-  port: "9000",
+  port: "443",
 });
 
 
