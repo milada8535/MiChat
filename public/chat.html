@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#ff6600">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+          integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/fonts.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>ChatCord App</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav.png">
+    <title>گفتگو با روانشناس</title>
 </head>
 <body>
   <div class="chat-container">
     <header class="chat-header">
-      <h1><i class="far fa-comment-alt"></i> Chatter_Boi</h1>
+        <h1>
+            <img src="img/fav.png" style="width:84px" />
+        </h1>
       <i style="font-size:34px" class="fas">&#xf03d;</i>
-      <a href="homeChat.html" class="btn">Leave Room</a>
+      <a href="homeChat.html" class="btn" style="font-family:'Yekan' ; ">خروج</a>
     </header>
     <main class="chat-main">
       <div class="chat-sidebar">
-        <h3><i class="fas fa-comments"></i> Room Name:</h3>
-        <h2 id="room-name">  <!-- dom manipulation --></h2>
-        <h3><i class="fas fa-users"></i> Users</h3>
+        <h3  style="font-family:'Yekan' ; "><i class="fas fa-comments"></i> عنوان وبینار  </h3>
+        <h2  style="font-family:'Yekan' ; " >
+            
+            روان گپ
+
+        </h2>
+        <h3  style="font-family:'Yekan' ; "><i class="fas fa-users"></i> کاربران</h3>
         <ul id="users">
          <!-- dom manipulation -->
         </ul>
@@ -33,12 +45,13 @@
       <form id="chat-form">
         <input
           id="msg"
+                style="font-family:'Yekan' ;text-align:right ; padding-right:10px ; padding-left:10px "
           type="text"
-          placeholder="Enter Message"
+          placeholder="پیام خود را وارد کنید"
           required
           autocomplete="off"
           />
-          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+          <button class="btn"  style="font-family:'Yekan' ; "><i class="fas fa-paper-plane"></i> ارسال</button>
       </form>
     </div>
   </div>
